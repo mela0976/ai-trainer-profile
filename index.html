@@ -1284,38 +1284,31 @@ p {
   font-style: normal;
 }
 
-.about-portrait {
-  position: relative;
-  width: min(100%, 370px);
-  aspect-ratio: 0.78;
-  margin: 56px 0 0;
-  background: var(--ink-soft);
+.hero-portrait {
+  width: max-content;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 28px;
+  padding: 8px 18px 8px 8px;
+  background: rgba(19, 41, 65, 0.62);
   border: 1px solid var(--ink-line);
-  border-radius: 5px 26px 5px 5px;
+  border-radius: 4px 18px 4px 4px;
   overflow: hidden;
 }
 
-.about-portrait::after {
-  content: "";
-  position: absolute;
-  inset: 55% 0 0;
-  background: linear-gradient(to bottom, transparent, rgba(4, 11, 20, 0.9));
-}
-
-.about-portrait img {
-  width: 100%;
-  height: 100%;
+.hero-portrait img {
+  width: 84px;
+  height: 100px;
   object-fit: cover;
   object-position: center top;
+  border-radius: 3px 11px 3px 3px;
   filter: saturate(0.78) contrast(1.04);
 }
 
-.about-portrait figcaption {
-  position: absolute;
-  right: 22px;
-  bottom: 20px;
-  left: 22px;
-  z-index: 1;
+.hero-portrait figcaption {
   color: #8fa4b9;
   font-family: var(--font-mono);
   font-size: 14px;
@@ -1324,7 +1317,7 @@ p {
   text-transform: uppercase;
 }
 
-.about-portrait figcaption span {
+.hero-portrait figcaption span {
   display: block;
   margin-bottom: 4px;
   color: var(--signal-bright);
@@ -2177,9 +2170,17 @@ p {
     font-size: 17px;
   }
 
-  .about-portrait {
-    width: min(100%, 340px);
-    margin-top: 38px;
+  .hero-portrait {
+    width: 100%;
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 14px;
+    margin-bottom: 26px;
+    padding: 7px 14px 7px 7px;
+  }
+
+  .hero-portrait img {
+    width: 72px;
+    height: 88px;
   }
 
   .faq-list summary {
@@ -2265,6 +2266,19 @@ p {
         <div class="hero-grid" aria-hidden="true"></div>
         <div class="shell hero-layout">
           <div class="hero-copy" data-reveal>
+            <figure class="hero-portrait">
+              <img
+                src="assets/cheng-lin-tsai-portrait.jpg"
+                alt="蔡政霖專業形象照"
+                fetchpriority="high"
+                width="740"
+                height="1000"
+              />
+              <figcaption>
+                <span>CHENG-LIN TSAI</span>
+                AI engineer<br />&amp; solution partner
+              </figcaption>
+            </figure>
             <p class="eyebrow">
               <span></span> AI STRATEGY・WORKFLOW・SOLUTION
             </p>
@@ -2705,19 +2719,6 @@ p {
             <h2>
               工程深度，<br />組織視角，<br /><em>治理意識。</em>
             </h2>
-            <figure class="about-portrait">
-              <img
-                src="assets/cheng-lin-tsai-portrait.jpg"
-                alt="蔡政霖專業形象照"
-                loading="lazy"
-                width="740"
-                height="1000"
-              />
-              <figcaption>
-                <span>CHENG-LIN TSAI</span>
-                AI engineer<br />&amp; solution partner
-              </figcaption>
-            </figure>
           </div>
 
           <div class="about-copy" data-reveal data-delay="100">
