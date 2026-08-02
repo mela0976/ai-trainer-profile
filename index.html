@@ -1630,6 +1630,75 @@ p {
   }
 }
 
+/* 1920 × 1080 reference canvas */
+@media (min-width: 1600px) {
+  :root {
+    --shell: min(1600px, calc(100vw - 128px));
+  }
+
+  .nav-wrap {
+    min-height: 88px;
+  }
+
+  .site-nav {
+    gap: 38px;
+  }
+
+  .hero {
+    min-height: 1080px;
+    padding-top: 150px;
+  }
+
+  .hero-layout {
+    grid-template-columns: minmax(0, 1.08fr) minmax(620px, 0.92fr);
+    gap: clamp(90px, 6vw, 124px);
+    min-height: 700px;
+  }
+
+  .hero h1 {
+    max-width: 880px;
+    font-size: clamp(72px, 4.45vw, 86px);
+  }
+
+  .hero-lede {
+    max-width: 760px;
+    font-size: 20px;
+  }
+
+  .workflow-stage {
+    width: 100%;
+    max-width: 680px;
+    justify-self: end;
+  }
+
+  .workflow-map {
+    min-height: 570px;
+  }
+
+  .flow-node {
+    width: 176px;
+    padding: 14px 15px 15px;
+  }
+
+  .flow-node-2 {
+    right: 42px;
+  }
+
+  .flow-node-3 {
+    right: 112px;
+  }
+
+  .proof-rail {
+    margin-top: 48px;
+  }
+
+  .proof-item,
+  .proof-note {
+    min-height: 112px;
+    padding-inline: 30px;
+  }
+}
+
 @media (max-width: 1040px) {
   .site-nav {
     gap: 20px;
