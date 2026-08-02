@@ -312,14 +312,12 @@ p {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1.04fr) minmax(440px, 0.96fr);
-  grid-template-rows: auto 1fr;
-  grid-template-areas:
-    "portrait workflow"
-    "copy workflow";
+  grid-template-columns: 180px minmax(0, 1fr) minmax(440px, 0.96fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "portrait copy workflow";
   align-items: center;
-  column-gap: clamp(42px, 7vw, 100px);
-  row-gap: 28px;
+  column-gap: clamp(32px, 4vw, 64px);
+  row-gap: 0;
   min-height: 570px;
 }
 
@@ -1298,7 +1296,8 @@ p {
   grid-area: portrait;
   width: 180px;
   max-width: 100%;
-  margin: 0;
+  align-self: start;
+  margin: 42px 0 0;
   padding: 10px;
   background: rgba(19, 41, 65, 0.62);
   border: 1px solid var(--ink-line);
@@ -1662,6 +1661,7 @@ p {
 
   .hero-portrait {
     width: 220px;
+    margin-top: 42px;
   }
 
   .hero-portrait img {
@@ -1712,6 +1712,35 @@ p {
   }
 }
 
+@media (max-width: 1100px) {
+  .hero-layout {
+    grid-template-columns: 200px minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "portrait copy"
+      "workflow workflow";
+    align-items: center;
+    column-gap: 40px;
+    row-gap: 52px;
+  }
+
+  .hero-portrait {
+    width: 200px;
+    align-self: center;
+    margin-top: 0;
+  }
+
+  .hero-portrait img {
+    height: 245px;
+  }
+
+  .workflow-stage {
+    width: 100%;
+    max-width: 680px;
+    justify-self: center;
+  }
+}
+
 @media (max-width: 1040px) {
   .site-nav {
     gap: 20px;
@@ -1726,8 +1755,8 @@ p {
   }
 
   .hero-layout {
-    grid-template-columns: 1fr 0.83fr;
-    gap: 44px;
+    column-gap: 36px;
+    row-gap: 44px;
   }
 
   .workflow-map {
@@ -1837,6 +1866,10 @@ p {
       "portrait"
       "copy"
       "workflow";
+  }
+
+  .hero-portrait {
+    justify-self: center;
   }
 
   .hero h1 {
@@ -2197,6 +2230,7 @@ p {
 
   .hero-portrait {
     width: 180px;
+    margin-top: 0;
     padding: 8px;
   }
 
