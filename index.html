@@ -680,7 +680,7 @@ p {
 
 .organization-list {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 10px;
   width: 100%;
 }
@@ -1749,7 +1749,7 @@ p {
   }
 
   .organization-list {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .program-card {
@@ -2036,6 +2036,12 @@ p {
     min-height: 104px;
     grid-template-rows: 62px auto;
     padding: 9px 9px 8px;
+  }
+
+  .organization-item:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - 4px);
+    justify-self: center;
   }
 
   .section,
@@ -2367,6 +2373,10 @@ p {
             <figure class="organization-item" role="listitem">
               <img src="assets/organization-03.jpg" alt="Google Logo" width="480" height="480" />
               <figcaption>Google</figcaption>
+            </figure>
+            <figure class="organization-item" role="listitem">
+              <img src="assets/organization-07.png" alt="玉山銀行官方圖示" width="180" height="180" />
+              <figcaption>玉山銀行</figcaption>
             </figure>
             <figure class="organization-item" role="listitem">
               <img src="assets/organization-04.jpg" alt="廣達電腦 Logo" width="480" height="480" />
