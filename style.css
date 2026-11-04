@@ -586,3 +586,11 @@ img { display: block; max-width: 100%; height: auto; }
 .agent-brand .fi{color:var(--blue)}.agent-prompt>.fi,.agent-result>.fi{margin-top:3px}.step-icon .fi{font-size:18px}.project-symbol .fi{font-size:23px}
 .icon-credit{grid-column:1/-1;color:var(--muted);font-size:12px}.icon-credit a{text-decoration:underline;text-underline-offset:3px}.hero-scroll .fi{font-size:15px}
 @media(max-width:760px){.site-footer{padding-bottom:20px}.icon-credit{justify-self:start}}
+
+/* Compact, accessible social icon links. */
+.contact-actions.social-links{display:flex;flex-direction:row;align-items:center;gap:14px}
+.social-link{display:inline-flex;width:56px;height:56px;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;background:#fff;color:#35628e;transition:background .18s,border-color .18s,transform .18s}
+.social-link .fi{width:26px;height:26px;font-size:26px}
+.social-link:hover,.social-link:focus-visible{background:var(--surface-blue);border-color:var(--blue);color:var(--blue);transform:translateY(-2px)}
+
+.contact-orbit{display:none}.contact{grid-template-columns:minmax(0,1fr)}

@@ -1,5 +1,5 @@
 /* Flaticon UIcons 4.0.0 Regular Rounded. Uicons by Flaticon: https://www.flaticon.com/uicons */
-@font-face{font-family:FlaticonRounded;src:url("uicons-regular-rounded-subset.woff2") format("woff2");font-display:block}
+@font-face{font-family:FlaticonRounded;src:url("uicons-regular-rounded-contact.woff2") format("woff2");font-display:block}
 .fi{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;flex:none;font-style:normal;font-weight:normal;font-size:20px;line-height:1;vertical-align:middle}
 .fi::before{font-family:FlaticonRounded!important;font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased}
 .fi-rr-arrow-up-right::before{content:"\e11b"}
@@ -19,3 +19,9 @@
 .fi-rr-restaurant::before{content:"\f081"}
 .fi-rr-running::before{content:"\f0d9"}
 .fi-rr-receipt::before{content:"\f03a"}
+.fi-rr-envelope::before{content:"\e785"}
+
+@font-face{font-family:FlaticonBrands;src:url("uicons-brands-subset.woff2") format("woff2");font-display:block}
+.fi[class*="fi-brands-"]::before{font-family:FlaticonBrands!important}
+.fi-brands-linkedin::before{content:"\ec27"}
+.fi-brands-github::before{content:"\e965"}
