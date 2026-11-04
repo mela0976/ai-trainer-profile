@@ -632,3 +632,42 @@ img { display: block; max-width: 100%; height: auto; }
   .site-footer { grid-template-columns: 1fr; gap: 16px; }
   .footer-copy { justify-self: start; }
 }
+
+/* Mobile reading space and image proportions. */
+@media (max-width: 760px) {
+  .section-wrap, .intro-band-inner, .header-inner { width: calc(100% - 40px); }
+  .hero { padding-block: 42px 70px; gap: 32px; }
+  .hero-copy, .section-heading, .feature-copy, .portfolio-project { min-width: 0; }
+  .hero-role { line-height: 1.6; }
+  .hero-ctas { gap: 12px; }
+  .hero-portrait { width: min(100%, 340px); padding: 10px; }
+  .hero-portrait img { aspect-ratio: 4 / 5; object-position: center 28%; }
+  .hero-portrait figcaption { padding: 14px 8px 8px; font-size: 13px; gap: 8px; }
+  .expertise, .training { padding-inline: 20px; border-radius: 24px; }
+  .expertise .section-heading h2 { font-size: clamp(28px, 7.8vw, 38px); }
+  .agent-studio { padding: 18px; border-radius: 22px; }
+  .agent-tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+  .agent-tabs button { flex: 1 1 90px; padding: 10px; }
+  .agent-step { padding: 16px; }
+  .service-row summary { padding-block: 20px; }
+  .service-detail { padding: 0 12px 22px; }
+  .training-stats { grid-template-columns: 1fr; gap: 12px; }
+  .training-stat { min-height: auto; padding: 20px; gap: 8px; }
+  .training-stat > strong { font-size: 34px; }
+  .training-stat > span { line-height: 1.6; }
+  .training-cases > article { padding: 22px; }
+  .training-cases ul { padding-left: 20px; }
+  .feature-photo, .feature-story-workshop .feature-photo { aspect-ratio: 4 / 3; }
+  .portfolio-project { padding: 22px; }
+  .portfolio-thumbnail img { aspect-ratio: 16 / 10; object-fit: contain; background: var(--surface); }
+  .project-tags { gap: 8px; }
+  .portfolio-project .text-link { max-width: 100%; flex-wrap: wrap; line-height: 1.6; }
+  .footer-note, .footer-copy { justify-self: start; text-align: left; }
+}
+@media (max-width: 380px) {
+  .expertise, .training { padding-inline: 16px; }
+  .agent-studio { padding: 14px; }
+  .agent-step { padding: 14px; grid-template-columns: 28px minmax(0, 1fr); }
+  .hero-portrait figcaption { flex-direction: column; }
+  .portfolio-project { padding: 20px; }
+}
