@@ -570,3 +570,12 @@ img { display: block; max-width: 100%; height: auto; }
 .hero h1 { letter-spacing:normal; }
 .hero-name { letter-spacing:-.045em; }
 .agent-step strong { font-weight:600; }
+
+/* Portrait leads the introduction; workflow follows the expertise. */
+.hero-portrait{width:min(100%,440px);margin-inline:auto;background:#f6f8fb;padding:10px;border-radius:32px}
+.hero-portrait img{height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 28%;border-radius:24px}
+.hero-portrait figcaption{padding:16px 10px 8px;font-size:12px}
+.hero-portrait .portrait-frame-corner{display:none}
+.about-layout{display:block}.about-copy{max-width:850px}
+.agent-showcase{max-width:880px;margin:40px auto 0}
+@media(max-width:760px){.hero-portrait{width:min(100%,350px)}.hero-portrait img{aspect-ratio:4/5}.hero-object{margin-top:0}.agent-showcase{margin-top:30px}}
