@@ -1,0 +1,21 @@
+/* Flaticon UIcons 4.0.0 Regular Rounded. Uicons by Flaticon: https://www.flaticon.com/uicons */
+@font-face{font-family:FlaticonRounded;src:url("uicons-regular-rounded-subset.woff2") format("woff2");font-display:block}
+.fi{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;flex:none;font-style:normal;font-weight:normal;font-size:20px;line-height:1;vertical-align:middle}
+.fi::before{font-family:FlaticonRounded!important;font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased}
+.fi-rr-arrow-up-right::before{content:"\e11b"}
+.fi-rr-arrow-down::before{content:"\e0eb"}
+.fi-rr-arrow-up::before{content:"\e115"}
+.fi-rr-copy::before{content:"\e5ab"}
+.fi-rr-share::before{content:"\f16a"}
+.fi-rr-menu-burger::before{content:"\eceb"}
+.fi-rr-cross::before{content:"\e5e8"}
+.fi-rr-plus::before{content:"\ef85"}
+.fi-rr-minus::before{content:"\ed25"}
+.fi-rr-search::before{content:"\f13a"}
+.fi-rr-comment-alt::before{content:"\e554"}
+.fi-rr-document::before{content:"\e6de"}
+.fi-rr-check::before{content:"\e430"}
+.fi-rr-apps::before{content:"\e0c4"}
+.fi-rr-restaurant::before{content:"\f081"}
+.fi-rr-running::before{content:"\f0d9"}
+.fi-rr-receipt::before{content:"\f03a"}

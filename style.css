@@ -579,3 +579,10 @@ img { display: block; max-width: 100%; height: auto; }
 .about-layout{display:block}.about-copy{max-width:850px}
 .agent-showcase{max-width:880px;margin:40px auto 0}
 @media(max-width:760px){.hero-portrait{width:min(100%,350px)}.hero-portrait img{aspect-ratio:4/5}.hero-object{margin-top:0}.agent-showcase{margin-top:30px}}
+
+/* One icon system: Flaticon UIcons, Regular Rounded. */
+.menu-toggle .fi-rr-cross{display:none}.menu-toggle[aria-expanded="true"] .fi-rr-menu-burger{display:none}.menu-toggle[aria-expanded="true"] .fi-rr-cross{display:inline-flex}
+.service-toggle{display:grid;place-items:center}.service-toggle::before,.service-toggle::after{display:none}.service-toggle .fi-rr-minus{display:none}.service-row[open] .service-toggle .fi-rr-plus{display:none}.service-row[open] .service-toggle .fi-rr-minus{display:inline-flex}
+.agent-brand .fi{color:var(--blue)}.agent-prompt>.fi,.agent-result>.fi{margin-top:3px}.step-icon .fi{font-size:18px}.project-symbol .fi{font-size:23px}
+.icon-credit{grid-column:1/-1;color:var(--muted);font-size:12px}.icon-credit a{text-decoration:underline;text-underline-offset:3px}.hero-scroll .fi{font-size:15px}
+@media(max-width:760px){.site-footer{padding-bottom:20px}.icon-credit{justify-self:start}}
