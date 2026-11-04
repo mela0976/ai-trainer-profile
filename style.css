@@ -604,4 +604,6 @@ img { display: block; max-width: 100%; height: auto; }
 .portfolio-thumbnail{display:block;overflow:hidden;margin-bottom:24px;border:1px solid var(--line-soft);border-radius:14px}.portfolio-thumbnail img{display:block;width:100%;height:auto;aspect-ratio:1.65;object-fit:cover;object-position:top}
 
 /* Chinese-only hero name */
-.hero h1 .hero-name-zh { margin-top: 0; font-size: clamp(44px, 6vw, 72px); }
+.hero h1 .hero-name-zh { margin-top: 0; font-size: clamp(64px, 7.6vw, 104px); letter-spacing: .055em; line-height: 1.2; }
+@media (min-width: 761px) { .hero-portrait { width: min(100%, 410px); } }
+@media (max-width: 760px) { .hero h1 .hero-name-zh { font-size: clamp(56px, 13vw, 80px); } }
