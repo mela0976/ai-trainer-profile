@@ -602,3 +602,6 @@ img { display: block; max-width: 100%; height: auto; }
 @media(max-width:760px){.featured-project{padding:16px}.featured-project-copy h3{font-size:26px}.more-projects{grid-template-columns:1fr;gap:16px}.portfolio-project{padding:22px}.project-actions{align-items:stretch;flex-direction:column}.project-actions a{width:100%}}
 
 .portfolio-thumbnail{display:block;overflow:hidden;margin-bottom:24px;border:1px solid var(--line-soft);border-radius:14px}.portfolio-thumbnail img{display:block;width:100%;height:auto;aspect-ratio:1.65;object-fit:cover;object-position:top}
+
+/* Chinese-only hero name */
+.hero h1 .hero-name-zh { margin-top: 0; font-size: clamp(44px, 6vw, 72px); }
