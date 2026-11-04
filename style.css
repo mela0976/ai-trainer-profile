@@ -594,3 +594,11 @@ img { display: block; max-width: 100%; height: auto; }
 .social-link:hover,.social-link:focus-visible{background:var(--surface-blue);border-color:var(--blue);color:var(--blue);transform:translateY(-2px)}
 
 .contact-orbit{display:none}.contact{grid-template-columns:minmax(0,1fr)}
+
+/* Product stories with direct experience and documented usage. */
+.featured-project{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:42px;align-items:center;margin-top:44px;padding:24px;background:var(--surface);border:1px solid var(--line-soft);border-radius:28px}
+.project-cover{display:block;overflow:hidden;border-radius:18px}.project-cover img{display:block;width:100%;height:auto;aspect-ratio:1.2;object-fit:cover;object-position:left top}.project-kind{margin:0 0 12px;color:var(--blue);font-size:16px;font-weight:600}.featured-project-copy h3{margin:0 0 18px;font-size:30px;font-weight:500;line-height:1.5}.featured-project-copy>p:not(.project-kind){color:var(--muted);line-height:1.85}.project-tags{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.project-tags span{padding:4px 11px;border:1px solid var(--line-soft);border-radius:30px;background:#fff;color:#5f6368;font-size:13px}.project-actions{display:flex;gap:10px;flex-wrap:wrap}.project-note{font-size:12px}.more-projects{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px}.portfolio-project{padding:30px;border:1px solid var(--line-soft);border-radius:24px}.portfolio-project h3{margin:0 0 15px;font-weight:500;font-size:24px}.portfolio-project p{color:var(--muted);line-height:1.85;margin:0}.portfolio-index{margin-top:28px}
+@media(max-width:900px){.featured-project{grid-template-columns:1fr;gap:24px}.project-cover img{aspect-ratio:1.44;object-position:center top}}
+@media(max-width:760px){.featured-project{padding:16px}.featured-project-copy h3{font-size:26px}.more-projects{grid-template-columns:1fr;gap:16px}.portfolio-project{padding:22px}.project-actions{align-items:stretch;flex-direction:column}.project-actions a{width:100%}}
+
+.portfolio-thumbnail{display:block;overflow:hidden;margin-bottom:24px;border:1px solid var(--line-soft);border-radius:14px}.portfolio-thumbnail img{display:block;width:100%;height:auto;aspect-ratio:1.65;object-fit:cover;object-position:top}

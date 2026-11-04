@@ -19,3 +19,7 @@ AI Agent 工作台為流程示意，不呼叫實際模型。教學規模依本�
 ## 圖示來源
 
 Uicons by [Flaticon](https://www.flaticon.com/uicons)，4.0.0 Regular Rounded。使用17個glyph的本地webfont子集，保留原輪廓；頁尾保留署名。來源與授權入口記錄於 `assets/icons/SOURCE.md`。
+
+## 產品與專案
+
+[前往圖文作品集與使用手冊](projects/README.md)：Qenilo、EchoWall、MELA 系統需求健檢。介紹與手冊公開，私有產品原始碼維持原權限。
